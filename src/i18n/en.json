@@ -1,0 +1,43 @@
+{
+  "header": {
+    "slogan": "Make travel happier",
+    "add_new_language": "add new language",
+    "title": "React Travel",
+    "register": "Register",
+    "login": "Login",
+    "placeholder": "please type destination/topic/key words",
+    "language": "Language",
+    "shoppingCart": "Shopping cart",
+    "signOut": "Sign out",
+    "welcome": "Welcome",
+    "myOrder": "My order"
+  },
+  "mainMenu": {
+    "home_page": "Home",
+    "weekend": "Weekend",
+    "group": "Group",
+    "backpack": "Backpack",
+    "private": "Private",
+    "cruise": "Cruise",
+    "hotel": "Hotel & Attractions",
+    "local": "Local",
+    "theme": "Theme",
+    "custom": "Custom",
+    "study": "Study",
+    "visa": "Visa",
+    "enterprise": "Enterprise",
+    "high_end": "High-end",
+    "outdoor": "Outdoor",
+    "insurance": "Insurance"
+  },
+  "footer": {
+    "detail": "All rights reserved @ ReactTravel.com"
+  },
+  "home_page": {
+    "hot_recommended": "Hot Recommended",
+    "new_arrival": "New arrival",
+    "domestic_travel": "Domestic travel",
+    "cooperative": "Cooperative",
+    "start_from": "(start from)"
+  }
+}

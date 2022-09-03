@@ -1,0 +1,11 @@
+.product-list-container {
+  padding: 20px;
+  margin-top: 20px;
+  background: white;
+  min-height: 274px;
+}
+
+.payment-card-container {
+  margin-top: 20px;
+  margin-left: 50px;
+}

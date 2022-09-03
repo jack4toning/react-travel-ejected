@@ -1,0 +1,27 @@
+{
+  "shoppingCart": {
+    "id": 888,
+    "userId": 1,
+    "shoppingCartItems": [
+      {
+        "id": 222,
+        "touristRouteId": 1,
+        "touristRoute": {
+          "id": 333,
+          "title": "苏州+乌镇+杭州3日2晚跟团游（5钻）",
+          "description": "『携程自营·2成人立减200！』生活着的古镇——寻味5A西塘【明星漫游·春意江南】宿乌镇&品牌5钻 +199升枕水 宋城自选",
+          "price": 79.998,
+          "originalPrice": 799.98,
+          "discountPresent": 0.1,
+          "rating": null,
+          "travelDays": "",
+          "tripType": "",
+          "departureCity": ""
+        },
+        "shoppingCartId": 888,
+        "originalPrice": 799.98,
+        "discountPresent": 0.1
+      }
+    ]
+  }
+}

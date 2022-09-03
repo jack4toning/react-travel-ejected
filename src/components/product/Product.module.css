@@ -1,0 +1,20 @@
+.product-intro-contaitner {
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+.product-anchor-menu {
+  margin: 20px 0;
+}
+
+.product-detail-container {
+  background-color: #fff;
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.anchor-link {
+  padding-left: 0;
+}
