@@ -41,20 +41,18 @@ function App() {
 
   const formRoute = (route: string) => {
     const publicUrl = process.env.PUBLIC_URL;
+    console.log(publicUrl, 123);
     if (publicUrl) {
       if (route === '/') return `/${publicUrl}`;
       else return `/${publicUrl}/${route}`;
     }
   };
 
-  console.log(process.env.NODE_ENV);
-
   return (
     <div className={styles.App}>
-      <h1>123213{process.env.NODE_ENV}</h1>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<MainLayout />}>
+          <Route path={formRoute('/')} element={<MainLayout />}>
             <Route index element={<Home />} />
             <Route path='products/:productId' element={<Product />} />
             <Route path='products/filter' element={<FilteredProducts />} />
