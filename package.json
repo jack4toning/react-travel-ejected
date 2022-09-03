@@ -82,6 +82,7 @@
     "test": "node scripts/test.js",
     "mock": "json-server db.json --port 3004"
   },
+  "homepage": "./",
   "eslintConfig": {
     "extends": [
       "react-app",
