@@ -80,6 +80,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
+    "deploy": "gh-pages -d build",
     "mock": "json-server db.json --port 3004"
   },
   "eslintConfig": {
@@ -104,6 +105,7 @@
     "@types/react-credit-cards": "^0.8.1",
     "@types/react-router-dom": "^5.3.3",
     "cross-env": "^7.0.3",
+    "gh-pages": "^4.0.0",
     "typescript-plugin-css-modules": "^3.4.0"
   },
   "jest": {
