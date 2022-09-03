@@ -39,8 +39,19 @@ function App() {
     if (jwt !== null) dispatch<any>(fetchShoppingCart(jwt));
   }, [jwt, dispatch]);
 
+  const formRoute = (route: string) => {
+    const publicUrl = process.env.PUBLIC_URL;
+    if (publicUrl) {
+      if (route === '/') return `/${publicUrl}`;
+      else return `/${publicUrl}/${route}`;
+    }
+  };
+
+  console.log(process.env.NODE_ENV);
+
   return (
     <div className={styles.App}>
+      <h1>123213{process.env.NODE_ENV}</h1>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<MainLayout />}>
@@ -52,7 +63,7 @@ function App() {
               element={<FilteredProducts />}
             />
             <Route
-              path='/shoppingCart'
+              path='shoppingCart'
               element={
                 <RequireAuth>
                   <ShoppinpCart />
@@ -60,7 +71,7 @@ function App() {
               }
             />
             <Route
-              path='/placeOrder'
+              path='placeOrder'
               element={
                 <RequireAuth>
                   <PlaceOrder />
@@ -68,10 +79,11 @@ function App() {
               }
             />
           </Route>
-          <Route path='/sign' element={<SignInUpLayout />}>
+          <Route path={formRoute('sign')} element={<SignInUpLayout />}>
             <Route path='signIn' element={<SignIn />} />
             <Route path='signUp' element={<SignUp />} />
           </Route>
+          {/* <Route path='/react-travel-ejected' element={<Navigate to={'/'} />} /> */}
           <Route path='*' element={<NotFound />} />
         </Routes>
       </BrowserRouter>

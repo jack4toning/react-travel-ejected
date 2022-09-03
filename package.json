@@ -78,11 +78,10 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "cross-env BUILD_PATH=docs node scripts/build.js",
+    "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "mock": "json-server db.json --port 3004"
   },
-  "homepage": "./",
   "eslintConfig": {
     "extends": [
       "react-app",
