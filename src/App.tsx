@@ -81,7 +81,6 @@ function App() {
             <Route path='signIn' element={<SignIn />} />
             <Route path='signUp' element={<SignUp />} />
           </Route>
-          {/* <Route path='/react-travel-ejected' element={<Navigate to={'/'} />} /> */}
           <Route path='*' element={<NotFound />} />
         </Routes>
       </BrowserRouter>
