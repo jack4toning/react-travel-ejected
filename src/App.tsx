@@ -41,7 +41,6 @@ function App() {
 
   const formRoute = (route: string) => {
     const publicUrl = process.env.PUBLIC_URL;
-    console.log(publicUrl, 123);
     if (publicUrl) {
       if (route === '/') return `/${publicUrl}`;
       else return `/${publicUrl}/${route}`;
